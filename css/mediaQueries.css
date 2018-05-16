@@ -1,0 +1,151 @@
+@media (max-width: 530px){
+
+
+    .page{
+        display: grid;
+        grid-template-rows: auto auto repeat(9, 1fr) auto;
+    }
+
+
+    /*=========page elements=========*/
+
+    .header{
+
+    }
+
+    .nav_bar_mobile{
+        display: grid;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1em;
+    }
+
+    .side_bar{
+        display: none;
+    }
+
+    .content_area{
+        grid-area: 2/1/12/13;
+    }
+
+    .footer{
+
+    }
+
+    .meniu_flat{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(5, 1fr);
+        place-content:center
+    }
+
+    .logo{
+        font-size: 3em;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-shadow: none;
+    }
+
+    .header_meniu{
+        display: none;
+    }
+
+    .nav_item_toggle.active,
+    .nav_item_toggle:hover{
+        -webkit-text-fill-color: #00FFFF;
+        text-decoration: none;
+    }
+
+    .nav_item_toggle i {
+        -webkit-transition: color;
+    }
+
+}
+
+
+@media (min-width: 531px){
+
+
+    .page{
+        display: grid;
+        grid-template-rows: auto repeat(10, 1fr) auto;
+    }
+
+
+    /*=========page elements=========*/
+
+    .header{
+
+     }
+
+
+    .nav_bar_mobile{
+        display: none;
+    }
+
+    .side_bar{
+        display: none;
+    }
+
+    .content_area{
+        grid-area: 2/1/12/13;
+    }
+
+    .footer{
+
+    }
+
+    .logo{
+        font-size: 3em;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-shadow: none;
+    }
+
+    .toogle_meniu{
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 768px){
+
+
+    .page{
+        grid-template-columns: auto repeat(11, 1fr);
+    }
+
+
+    /*=========page elements=========*/
+
+    .header{
+        display: none;
+    }
+
+    .nav_bar_mobile{
+        display: none;
+    }
+
+    .side_bar{
+        display: grid;
+    }
+
+    .content_area{
+        grid-area: 1/2/13/13;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .logo{
+        font-size: 3em;
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+
+}
+
